@@ -1,14 +1,19 @@
+using System;
+
 namespace GarysGarage
 {
-    public class Cessna // Propellor light aircraft
+    public class Tesla : Vehicle
     {
-        public double FuelCapacity { get; set; }
-        public string MainColor { get; set; }
-        public string MaximumOccupancy { get; set; }
+        public double BatteryKWh { get; set; }
 
-        public void RefuelTank()
+        public void ChargeBattery()
         {
-            // method definition omitted
+            Console.WriteLine($"Your Telsa is charge {this.BatteryKWh} KWh ");
+        }
+
+        public override void Drive()
+        {
+            Console.WriteLine($"The black telsa went zaaazoooM! ");
         }
     }
 }
