@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace garys_garage
+namespace GarysGarage
 {
     class Program
     {
