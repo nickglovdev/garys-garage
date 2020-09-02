@@ -12,7 +12,13 @@ namespace GarysGarage
         }
         public override void Drive()
         {
-            Console.WriteLine("Zooom!");
+            Console.WriteLine("The brown Cessna went paaapow!!");
         }
+
+        public override void Turn()
+        {
+
+        }
+
     }
 }

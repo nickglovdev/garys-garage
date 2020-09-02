@@ -11,6 +11,14 @@ namespace GarysGarage
         {
             Console.WriteLine("VROOOM!");
         }
+        public virtual void Turn()
+        {
+            Console.WriteLine("Wrong way! BAMM!W");
+        }
+        public virtual void stop()
+        {
+            Console.WriteLine("Silently the thing stopped moving before they shed a tear");
+        }
 
     }
 }
