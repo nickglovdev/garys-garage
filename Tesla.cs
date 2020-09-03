@@ -2,8 +2,10 @@ using System;
 
 namespace GarysGarage
 {
-    public class Tesla : Vehicle
+    public class Tesla : Vehicle, IElectricVehicle
     {
+        public int CurrentChargePercentage { get; set; }
+
         public double BatteryKWh { get; set; }
 
         public void ChargeBattery()
@@ -15,5 +17,6 @@ namespace GarysGarage
         {
             Console.WriteLine($"The black telsa went zaaazoooM! ");
         }
+
     }
 }

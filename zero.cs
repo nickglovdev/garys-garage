@@ -2,8 +2,9 @@ using System;
 
 namespace GarysGarage
 {
-    public class Zero : Vehicle
+    public class Zero : Vehicle, IElectricVehicle
     {
+        public int CurrentChargePercentage { get; set; }
         public double BatteryKWh { get; set; }
 
         public void ChargeBattery()
