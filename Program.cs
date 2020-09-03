@@ -7,21 +7,60 @@ namespace GarysGarage
         static void Main(string[] args)
         {
             Zero fxs = new Zero();
-            fxs.BatteryKWh = 56;
-            fxs.ChargeBattery();
+            Zero fx = new Zero();
+            Tesla modelS = new Tesla();
 
-            Tesla telsa = new Tesla();
-            telsa.BatteryKWh = 100;
-            telsa.ChargeBattery();
+            List<?? ?> electricVehicles = new List<?? ?>()
+            {
+                fx,
+                fxs,
+                modelS
+            };
 
-            Cessna cessna = new Cessna();
-            cessna.FuelCapacity = 100;
-            cessna.RefuelTank();
+            Console.WriteLine("Electric Vehicles");
+            foreach ( ?? ? ev in electricVehicles)
+            {
+                Console.WriteLine($"{ev.CurrentChargePercentage}");
+            }
 
-            fxs.Drive();
-            telsa.Drive();
-            cessna.Drive();
+            foreach ( ?? ? ev in electricVehicles)
+            {
+                // This should charge the vehicle to 100%
+                ev.ChargeBattery();
+            }
 
+            foreach ( ?? ? ev in electricVehicles)
+            {
+                Console.WriteLine($"{ev.CurrentChargePercentage}");
+            }
+
+            /***********************************************/
+
+            Ram ram = new Ram();
+            Cessna cessna150 = new Cessna();
+
+            List<?? ?> gasVehicles = new List<?? ?>()
+            {
+                ram,
+                cessna150
+            };
+
+            Console.WriteLine("Gas Vehicles");
+            foreach ( ?? ? gv in gasVehicles)
+            {
+                Console.WriteLine($"{gv.CurrentTankPercentage}");
+            }
+
+            foreach ( ?? ? gv in gasVehicles)
+            {
+                // This should completely refuel the gas tank
+                gv.RefuelTank();
+            }
+
+            foreach ( ?? ? gv in gasVehicles)
+            {
+                Console.WriteLine($"{gv.CurrentTankPercentage}");
+            }
         }
     }
 }
