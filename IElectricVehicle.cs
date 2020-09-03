@@ -6,7 +6,7 @@ namespace GarysGarage
     {
         int CurrentChargePercentage { get; set; }
 
-        void Charge();
+        void ChargeBattery();
     }
 
 }

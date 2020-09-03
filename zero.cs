@@ -2,8 +2,9 @@ using System;
 
 namespace GarysGarage
 {
-    public class Zero : Vehicle
+    public class Zero : Vehicle, IElectricVehicle
     {
+        public int CurrentChargePercentage { get; set; }
         public double BatteryKWh { get; set; }
 
         public void ChargeBattery()
@@ -20,7 +21,7 @@ namespace GarysGarage
         }
         public override void stop()
         {
-            Console.WriteLine("OH GOD STOP NOOOOO!!!!!")
+            Console.WriteLine("OH GOD STOP NOOOOO!!!!!");
         }
     }
 }
