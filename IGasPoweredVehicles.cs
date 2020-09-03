@@ -4,7 +4,7 @@ namespace GarysGarage
 {
     public interface IGasPoweredVehicle
     {
-        int CurrentGasPercentage { get; set; }
+        int CurrentTankPercentage { get; set; }
 
         void RefuelTank();
     }

@@ -2,8 +2,10 @@ using System;
 
 namespace GarysGarage
 {
-    public class Cessna : Vehicle
+    public class Cessna : Vehicle, IGasPoweredVehicle
     {
+
+        public int CurrentTankPercentage { get; set; }
         public double FuelCapacity { get; set; }
 
         public void RefuelTank()
